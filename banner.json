@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-11-button-events",
+  "eyebrow": "PICOKIT // LESSON 11",
+  "title": "PICOKIT // BUTTON EVENTS",
+  "subtitle": "SHORT LONG DOUBLE PRESS EVENTS AND AUTHENTICATED HEARTBEAT",
+  "accent": "#5FFF00",
+  "dim": "#3A9E00",
+  "white": "#DDF6DB",
+  "cyan": "#7FD8E0",
+  "bg": "#061100",
+  "bg_edge": "#010500",
+  "icon": "button",
+  "panel_status": "EVENT 2  ·  LONG PRESS  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "INPUT",
+      "value": "GP15"
+    },
+    {
+      "label": "EVENT",
+      "value": "long"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-37 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00011  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] button event e=2 long  lamp yellow  onboard blink",
+    "[+] ack sent  rssi -37  snr 8.9"
+  ],
+  "categories": [
+    "EVENTS",
+    "TIMING",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "EV-01",
+      "label": "short",
+      "value": "e=1"
+    },
+    {
+      "tag": "EV-02",
+      "label": "long",
+      "value": "e=2"
+    },
+    {
+      "tag": "EV-03",
+      "label": "double",
+      "value": "e=3"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ EVENTS ]=="
+  ],
+  "layout": "panel",
+  "stat": "GP15"
+}
